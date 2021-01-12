@@ -17,10 +17,10 @@ jobs:
        uses: actions/checkout@v2 # checkout the repository content to github runner.
      - name: install dependencies
        run: |
-         pip install requests
-         pip install pandas
-         pip install lxml
-         pip install pillow
+         pip3 install requests
+         pip3 install pandas
+         pip3 install lxml
+         pip3 install pillow
      - name: setup python
        uses: actions/setup-python@v2
        with:
