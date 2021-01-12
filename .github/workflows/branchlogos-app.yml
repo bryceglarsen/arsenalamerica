@@ -19,7 +19,6 @@ jobs:
        run: |
          pip install requests
          pip install pandas
-         pip install io
          pip install lxml.html
          pip install pillow
      - name: setup python
