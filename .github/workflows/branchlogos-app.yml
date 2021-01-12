@@ -19,7 +19,7 @@ jobs:
        run: |
          pip install requests
          pip install pandas
-         pip install lxml.html
+         pip install lxml
          pip install pillow
      - name: setup python
        uses: actions/setup-python@v2
