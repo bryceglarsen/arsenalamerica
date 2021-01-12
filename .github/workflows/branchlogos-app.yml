@@ -15,20 +15,16 @@ jobs:
     steps:
      - name: checkout repo content
        uses: actions/checkout@v1 # checkout the repository content to github runner.
+     - name: setup python
+       uses: actions/setup-python@v1
+       with:
+         python-version: 3.8 #install the python needed
      - name: install dependencies
        run: |
          pip install requests
          pip install pandas
          pip install lxml
          pip install pillow
-         requests
-         xlml.html as lh
-         pandas
-         pillow as pil
-     - name: setup python
-       uses: actions/setup-python@v1
-       with:
-         python-version: 3.8 #install the python needed
      - name: execute logos python script # run the run.py to get the latest data
        run: |
          python ArsenalAmericaLogos.py
